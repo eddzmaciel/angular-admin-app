@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Striped Progress bar <a class="get-code" data-toggle="collapse" href="#pgr3"
+                        aria-expanded="true"><i class="fa fa-code" title="" data-toggle="tooltip"
+                            data-original-title="Get Code"></i></a></h4>
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-primary progress-bar-striped active" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100" style="height:7px;" role="progressbar"
+                        [style.width]="getProgreso1">
+                    </div>
+                </div>
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-info progress-bar-striped active" aria-valuenow="85" aria-valuemin="0"
+                        aria-valuemax="100" style="height:7px;" role="progressbar" [style.width]="getProgreso2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <!-- Here we are sending and getting output values and  we can make a class dinamically -->
+                <app-incrementador (valorSalida)="progreso1=$event" [valorEntrada]="progreso1">
+                </app-incrementador>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <!-- Here we are sending and getting output values and  we can make a class dinamically -->
+                <app-incrementador (valorSalida)="progreso2=$event" [valorEntrada]="progreso2" [btnClass]="'btn-info'">
+                </app-incrementador>
+            </div>
+        </div>
+    </div>
+</div>

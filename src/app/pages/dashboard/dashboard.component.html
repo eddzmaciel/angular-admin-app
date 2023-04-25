@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h3>Card Example</h3>
+        <hr />
+        <div style="display: block">
+          <ul>
+            <li>RoundDown Prev: 0.49 , Rounded: {{ roundDown }}</li>
+            <li>RoundUp Prev: 0.50, Rounted: {{ roundUp }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h3>Hover Example</h3>
+        <hr />
+        <div style="display: block">
+          <ul class="list-style-none list-group">
+            <li
+              class="
+                col-4
+                list-group-item
+                active
+                d-flex
+                align-items-center
+                justify-content-between
+              "
+            >
+              <button
+                type="button"
+                class="btn btn-secondary btn-circle"
+                matTooltip="Edit Strategy or $ Cash"
+                matTooltipPosition="above"
+                matTooltipHideDelay="10000"
+              >
+                <i class="fa fa-pencil"></i>
+              </button>
+              <label for="">L-SHRT-CRDT</label>
+              <input
+                class="col-4 form-control"
+                type="text"
+                id="firstName"
+                placeholder="$249,376"
+              />
+            </li>
+            <li>
+              <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

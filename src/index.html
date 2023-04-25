@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>AdminPro</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- //TODO: TAKE IT from the environment config -->
+
+    <!--  ##Start - Google SignIn Old Method (09/12/21) -->
+    <meta
+      name="google-signin-client_id"
+      content="150531966236-7vof46siprlhh9iuhoouueilii8qsi8l.apps.googleusercontent.com"
+    />
+    <!-- Loading the library mandatory -->
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <!-- Load async -->
+    <!-- <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script> -->
+    <!--  ##End - Google SignIn Old Method (09/12/21) -->
+
+    <!--  ##Start - Google SignIn NEW Method (09/12/21) -->
+    <!-- <script src="https://accounts.google.com/gsi/client" async defer></script> -->
+    <!--  ##End - Google SignIn NEW Method (09/12/21) -->
+
+    <!-- Favicon icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/images/favicon.png"
+    />
+    <!-- Bootstrap Core CSS -->
+    <link
+      href="./assets/plugins/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <!-- You can change the theme colors from here -->
+    <link
+      href="./assets/css/colors/default-dark.css"
+      id="theme"
+      rel="stylesheet"
+    />
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+  <body class="fix-header card-no-border fix-sidebar">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader__figure"></div>
+        <p class="loader__label">Loading...</p>
+      </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <app-root></app-root>
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="./assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="./assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="./assets/js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Wave Effects -->
+    <script src="./assets/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="./assets/js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="./assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="./assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+    <!--Custom JavaScript, we have updated the code -->
+    <script src="./assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <!--  ##Start - Google SignIn NEW Method (09/12/21) -->
+    <!-- <script>
+      var googleAuth = function handleCredentialResponse(response) {
+        // decodeJwtResponse() is a custom function defined by you
+        // to decode the credential response.
+
+        console.log('response:', response);
+
+        return response;
+        // const responsePayload = decodeJwtResponse(response.credential);
+
+        // console.log('ID: ' + responsePayload.sub);
+        // console.log('Full Name: ' + responsePayload.name);
+        // console.log('Given Name: ' + responsePayload.given_name);
+        // console.log('Family Name: ' + responsePayload.family_name);
+        // console.log('Image URL: ' + responsePayload.picture);
+        // console.log('Email: ' + responsePayload.email);
+      };
+    </script> -->
+
+    <!--  ##End - Google SignIn NEW Method (09/12/21) -->
+  </body>
+</html>

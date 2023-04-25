@@ -1,0 +1,11 @@
+<div class="input-group">
+    <span class="input-group-btn">
+        <button [ngClass]="btnClass" type="button" (click)="cambiarValor(-5)">-</button>
+    </span>
+    <!-- just to put the mark color when the progress is upper 100 or lower than 0 -->
+    <input type="number" class="form-control is-invalid" [ngClass]="{'is-invalid': progreso > 100 || progreso < 0}"
+        placeholder="Progreso" min="0" max="100" [(ngModel)]="progreso" (ngModelChange)="onChange($event)">
+    <span class="input-group-btn">
+        <button [ngClass]="btnClass" type="button" (click)="cambiarValor(5)">+</button>
+    </span>
+</div>
